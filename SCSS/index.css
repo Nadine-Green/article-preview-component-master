@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+* {
+  transition: 0.3s ease-in-out;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+nav ul {
+  list-style: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+body {
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main {
+  display: flex;
+  font-size: 13px;
+  background-color: white;
+  font-family: "Manrope";
+  max-width: 45rem;
+  height: 16rem;
+  border-radius: 1rem;
+  overflow-x: visible;
+}
+body main #img {
+  width: 40%;
+  border-radius: 1rem 0 0 1rem;
+}
+body main #one {
+  padding: 1.5rem;
+  scrollbar-color: hotpink;
+}
+body main #one p:first-child {
+  color: hsl(217, 19%, 35%);
+  font-weight: bold;
+}
+body main #one p:last-of-type {
+  color: hsl(217, 19%, 35%);
+}
+body main #one .paraone {
+  font-size: 1.5em;
+  max-width: 20rem;
+  margin-bottom: 1rem;
+}
+body main #one .bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(217, 19%, 35%);
+  margin-top: 1rem;
+}
+body main #one .bottom .michelle {
+  display: flex;
+  gap: 1rem;
+}
+body main #one .bottom .michelle img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+}
+body main #one .bottom .michelle .name {
+  display: flex;
+  flex-direction: column;
+}
+body main #one .bottom .div {
+  position: relative;
+}
+body main #one .bottom .div .img1 {
+  padding: 0.5rem;
+  border-radius: 2rem;
+  background-color: hsl(210, 46%, 95%);
+}
+body main #one .bottom .div #flex {
+  width: 13rem;
+  height: 3rem;
+  border-radius: 0.7rem;
+  background-color: hsl(217, 19%, 35%);
+  position: absolute;
+  bottom: 3rem;
+  left: -6rem;
+}
+body main #one .bottom .div #flex #paragraph {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.7rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  padding: 1rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.5rem;
+  background-color: hsl(217, 19%, 35%);
+}
+
+@media screen and (max-width: 700px) {
+  body main {
+    margin: 1rem;
+    flex-direction: column;
+    max-width: 30rem;
+    height: auto;
+  }
+  body main #img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  body main {
+    overflow: hidden;
+  }
+  body main #one .bottom .michelle {
+    display: none;
+  }
+  body main #one .bottom .div {
+    margin-left: 90%;
+    margin-bottom: -10%;
+    width: 10rem;
+  }
+  body main #one .bottom .div .img1 {
+    position: absolute;
+    bottom: -0.4rem;
+    z-index: 2;
+  }
+  body main #one .bottom .div #flex {
+    bottom: -1rem;
+    left: -20rem;
+    width: 24rem;
+  }
+  body main #one .bottom .div #flex #paragraph {
+    width: 100%;
+    justify-content: start;
+    margin-left: 5rem;
+    gap: 1rem;
+    align-items: center;
+    color: white;
+    padding: 1rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 0.5rem;
+    background-color: hsl(217, 19%, 35%);
+  }
+  body main #one .bottom .div #flex #paragraph .social:hover {
+    background-color: red;
+  }
+  body main #one .bottom .div #flex #arrow {
+    display: none;
+  }
+}

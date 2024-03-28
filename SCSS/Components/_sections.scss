@@ -1,0 +1,173 @@
+body{
+    background-color:$light-grayish-blue;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+main{
+    display:flex;
+    font-size:$font-size;
+    background-color: white;
+    font-family: "Manrope";
+    max-width:45rem;
+    height:16rem;
+    border-radius:1rem;
+    overflow-x:visible;
+    #img{
+        width:40%;
+        border-radius:1rem 0 0 1rem;
+        //height:100px;
+    }
+
+    #one{
+       //width: 500px;
+       //height:100px;
+       padding:1.5rem;
+       scrollbar-color: hotpink;
+
+       p:first-child{
+        color:$very-dark-grayish-blue;
+        font-weight:bold;
+       }
+
+       p:last-of-type{
+        color:$very-dark-grayish-blue;
+       }
+
+       .paraone{
+        font-size:1.5em;
+        max-width:20rem;
+        margin-bottom:1rem;
+       }
+
+    .bottom{
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+        color:$very-dark-grayish-blue;
+        margin-top:1rem;
+        .michelle{
+            display:flex;
+            gap: 1rem;
+            img{
+                width:2rem;
+                height:2rem;
+                border-radius:1rem;
+            }
+            .name{
+                display:flex;
+                flex-direction:column;
+            }
+        }
+        .div{
+            position: relative;
+        .img1{
+            padding:.5rem;
+            border-radius:2rem;
+            background-color:$light-grayish-blue;
+        }
+
+        #flex{
+                width: 13rem;
+                height: 3rem;
+                border-radius: .7rem;
+                background-color: hsl(217, 19%, 35%);
+                position: absolute;
+                bottom: 3rem;
+                left: -6rem;
+
+                    #paragraph {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: .7rem;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        color: white;
+                        padding: 1rem;
+                        font-weight: 100;
+                        text-transform: uppercase;
+                        font-size: 10px;
+                        letter-spacing: .5rem;
+                        background-color: hsl(217, 19%, 35%);
+                    
+                }
+        }
+    }
+    }
+}
+}
+}
+
+//MEDIA QUERIES//
+
+
+@media screen and (max-width:700px){
+    body{
+    main{
+        margin:1rem;
+        flex-direction:column;
+        max-width:30rem;
+        height:auto;
+
+        #img{
+            width:100%;
+        }
+    }
+}
+}
+
+@media screen and (max-width:400px){
+    body{
+        main{
+            overflow: hidden;
+            #one{
+                .bottom{
+                    .michelle{
+                    display: none;
+            }
+
+            .div{
+                margin-left:90%;
+                margin-bottom: -10%;
+                width:10rem;
+                .img1{
+                    position:absolute;
+                    bottom: -.4rem;
+                    z-index:2;
+                }
+
+                #flex{
+                    bottom: -1rem;
+                    left: -20rem;
+                    width:24rem;
+                    #paragraph {
+                        width: 100%;
+                        justify-content:start;
+                        margin-left:5rem;
+                        gap:1rem;
+                        align-items: center;
+                        color: white;
+                        padding: 1rem;
+                        font-weight: 100;
+                        text-transform: uppercase;
+                        font-size: 10px;
+                        letter-spacing: .5rem;
+                        background-color: hsl(217, 19%, 35%);
+
+                        .social:hover{
+                            background-color:red;
+                        }
+                    }
+                    
+
+                    #arrow{
+                        display:none;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+}
